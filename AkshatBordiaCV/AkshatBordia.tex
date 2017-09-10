@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{nth}
+\setlist[itemize]{leftmargin=*}
+\begin{document}
+\noindent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Akshat}{Bordia}{ %\urlstyle{same}\url{https://sites.google.com/site/akshatbordia1/} \\
+\href{mailto:akshat.bordia31@gmail.com}{akshat.bordia31@gmail.com} | +91-8011228476 | \href{https://www.linkedin.com/in/akshatbordia/}{\custombold{linkedin.com/in/akshatbordia}}|\href{https://github.com/akshatb1}{\custombold{ github.com/akshatb1}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.48\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Areas of Interest}
+%Data Structures and Algorithms \\
+%Object Oriented Programming \\
+%Machine Learning \\
+
+\section{\custombold{\large{Education}}}
+\hline
+\vspace{2mm}
+\subsection{IIT, Guwahati | B.Tech. (2015)}
+\descript{Electronics and Electrical Engineering}
+\location{ \nth{3} Year GPA: 9.46/10 | \nth{4} Year GPA: 9.49/10}
+\location{Cumulative GPA: 8.81/10 | \custombold{Institute Merit Scholar}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\section{Links} 
+
+%%LinkedIn://  \href{https://www.linkedin.com/in/akshatbordia/}{\custombold{akshatbordia}} \\
+%Google Site://  \href{https://sites.google.com/site/akshatbordia1/}{\custombold{akshatbordia1}} \\
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{\large{Coursework}}
+
+%Machine Learning \textbullet{} Computer Vision 
+%\textbullet{}Biometrics\\ Image Processing %\textbullet{}
+%Data Structure and Algorithms \\
+%Advanced Random Processes\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\custombold{\large{Technical Skills}}}
+\hline
+\vspace{2mm}
+\custombold{Programming:} \\
+C \textbullet{} C++ \textbullet{} Java \textbullet{} Python \textbullet{} Shell \textbullet{} Java Script  \\
+\vspace{1.5mm}
+
+\custombold{Operating Systems:}  \\
+Linux (Ubuntu) \textbullet{} macOS \textbullet{} Windows\\
+\vspace{1.5mm}
+\custombold{Revision Control:}
+
+GIT \textbullet{} Perforce \\
+
+
+
+\section{\custombold{\large{Internships and University Projects}}}
+\hline
+\vspace{2mm}
+\runsubsection{{\normalsize{University of Western Australia\\}}}
+\descript{Research Intern}
+May-July 2014 | Perth, Western Australia \\
+\vspace{3mm}
+
+\begin{tightemize}
+ \item Femur bone segmentation for 3D reconstruction from orthopaedic CT scans with focus on separating femur from the pelvis and femoral head visualization.
+ \item Designed and implemented an algorithm for femur bone extraction from bone segmentation results.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\normalsize{Blind Image Quality Assessment}}
+\descript{Bachelor Thesis Project}
+\begin{tightemize}
+
+ \item Automated image quality assessment mimicking human perception resulting 98\% accuracy.
+ \item Published in \custombold{Elsevier Procedia Computer Science} as “Blind Content Independent Noise Estimation for Multimedia Applications”.
+\end{tightemize}
+\sectionsep
+\runsubsection{\normalsize{Tag Me: Object Classification}}
+\descript{Machine Learning Contest}
+Designed and implemented a Machine Learning algorithm which was based on clustering of SURF features and bag of words to tag objects into different categories with 92\% accuracy.
+
+\sectionsep
+
+\runsubsection{\normalsize{Face Recognition and Reconstruction }}
+\descript{Using Dimensionality Reduction Techniques}
+Implemented PCA and Fisher LDA algorithms for face recognition and validated comparative analysis. Classification accuracy was 87\% and 91\%
+respectively.
+\sectionsep
+
+\runsubsection{\normalsize{Intelligent Traffic Control} }
+\descript{based on Computer Vision}
+%\begin{tightemize}
+ %\item 
+ Designed and implemented Computer Vision based system for vehicle density detection at crossroads to control traffic signal. Demonstrated
+smart signal control by implementing an Arduino
+based digital circuit.
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}% 
+\hfill
+\begin{minipage}[t]{0.48\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\custombold{Experience}}
+\hline
+\vspace{2mm}
+\runsubsection{Citrix}
+\descript{| Software Development Engineer 2 }
+\location{July 2015 – Present | Bengaluru, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{2mm}
+\begin{tightemize}
+\item Working as a part of Citrix XenMobile, which is a comprehensive Unified Endpoint Management (UEM) solution. Primary responsibilities include Server Development in Java which utilizes Hibernate and Spring frameworks, Tomcat Web Server etc.
+\vspace{1mm}
+\item \custombold{Lean Innovation Program: }Building a startup from scratch including market research, customer interviews, prototype development and validation. Working on developing a Smart Assistant for Enterprise products to simplify administrator experience. This assistant leverages Natural Language Processing and Artificial Intelligence to assist and perform admin tasks.
+\vspace{1mm}
+\item \custombold{Help-bot Prototype Development} for XenMobile Server using API.AI, Java and Java Script.
+\vspace{1mm}
+\item \custombold{Development Lead for Server Upgrade Patches:} Ensured high-quality releases by code review and build related commits for rolling patches.
+\vspace{1mm}
+
+\item \custombold{Request Management Tool:} Developed a tool to automate the process of monitoring and managing patch request emails. The tool interacts with various enterprise products such as Confluence, Sharepoint, JIRA, Exchange Server etc. via APIs or Python libraries.
+\vspace{1mm}
+\item \custombold{Health Check Plugins and Framework Enhancements:} \\
+\vspace{1mm}
+\begin{tightemize}
+ \item Developed health check plugins for XenMobile Server and Client Apps leading to improved product quality and reduced volume of support cases.
+ \item Enhancement to ensure that only latest log files above a certain threshold are parsed and hence improved the memory and time complexity of Plugin execution from $\mathcal{O}(n)$ to $\mathcal{O}(1)$.
+\end{tightemize}
+\vspace{1mm}
+\item Submitted an invention disclosure in Dec’16 for product innovation.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{\custombold{Achievements}}
+\hline
+\vspace{2mm}
+\textbullet{} \custombold{Citation of Excellence} - Finalist of Citrix Lean Innovation Challenge out of 160 teams.\\
+\vspace{1mm}
+\textbullet{} \custombold{Citrix Spot Bonus Award} for outstanding contribution to multiple projects in Q1-2017. \\
+\vspace{1mm}
+ \textbullet{} \custombold{Institute Merit Scholarship} for excellent academic performance (Rank 1). \\
+ \vspace{1mm}
+\textbullet{} \custombold{OPJEMS scholar} (2014) in recognition of academic and leadership excellence. \\
+\vspace{1mm}
+\textbullet{} \custombold{Kishore Vaigyanik Protsahan Yojna} fellowship (2011). \\
+\vspace{1mm}
+\textbullet{} \custombold{State rank 10} in Indian Regional Mathematics Olympiads. \\
+\vspace{1mm}
+\textbullet{} \custombold{INSPIRE Award} by Department of Science and Technology, Government of India in 2010.\\
+
+
+\sectionsep
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\end{minipage} 
+\end{document}
